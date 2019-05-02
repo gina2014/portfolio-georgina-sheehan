@@ -1,0 +1,115 @@
+.body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.site-container {
+  width: 90rem;
+  margin: 0px auto;
+}
+
+/* General CSS Classes */
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none
+}
+
+#page-header {
+  width: 100%;
+  height: 46rem;
+  /*background-image: url("../images/mountains.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.background-image img {
+  opacity: 0.9;
+  width: 100%;
+}
+
+.nav-section {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  padding-top: 2rem;
+  color: #ffffff;
+  text-align: right;
+  margin-right: 5rem;
+}
+
+.nav-section a {
+  color: #ffffff;
+  padding: 5rem;
+}
+
+.personal-information {
+  width: auto;
+  position: absolute;
+  top: 15rem;
+  color: #F8F8FF;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.personal-information .name {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-family: Raleway;
+}
+
+.personal-information .title {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-family: Raleway;
+}
+
+.contact-section {
+  padding-top: 1rem;
+}
+
+.contact-section a {
+  color: #F8F8FF;
+  font-weight: bold;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+}
+
+/*#welcome-section {
+  width: 100%;
+  height: 50rem;
+
+}
+
+.personal-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.personal-information span {
+  font-weight: bold;
+  font-family: Raleway;
+  color: #000000;
+}
+
+.contact-section a {
+  color: #000000;
+  font-weight: bold;
+}*/
