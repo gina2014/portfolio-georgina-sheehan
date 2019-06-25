@@ -117,29 +117,76 @@ a {
 }
 
 #works {
-  width: 100%;
+/*  width: 100%;*/
   height: 50rem;
-  background-color: #3C454C; /*#C0C0C0; /*#F0F8FF;*/
+  background-image: url("../images/footer-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000; /*#3C454C; /*#C0C0C0; /*#F0F8FF;*/
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .work-header {
   font-size: 2rem;
+  color: seashell;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 .projects {
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project {
-  width: 20%;
+  width: 25%;
   height: 17.5rem;
+  background-color: #2F2F2F;
+  color: seashell;
+  margin-right: 3rem;
+  border: 2px solid seashell;
 }
 
 .project-image img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  border-bottom: 1px solid seashell;
 }
 
+.project-heading {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.technologies {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #B0B0B0;
+  flex-wrap: wrap;
+}
+
+.technologies-heading {
+
+}
+
+.technologies ul {
+
+}
+.technologies ul li {
+  list-style-type: circle;
+
+}
 /*#welcome-section {
   width: 100%;
   height: 50rem;
