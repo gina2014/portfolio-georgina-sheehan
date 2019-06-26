@@ -27,7 +27,7 @@ a {
   height: 4rem;
   display: flex;
   align-items: center;
-  background-color: black; /*#172C3E; /* #253746;*/
+  background-color: #000000; /*#172C3E; /* #253746;*/
   border-bottom: 1px solid seashell;/*#F0F8FF;*/
   /*position: fixed;*/
   margin: 0 auto;
@@ -43,6 +43,10 @@ a {
   color: #ffffff;
   font-size: 1.1rem;
   padding: 4rem;
+}
+
+.nav-section a:hover {
+  color: #C71585;
 }
 
 #about {
@@ -61,37 +65,23 @@ a {
   justify-content: center;
 }
 
+.introduction {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-family: Raleway;
+}
+
 .personal-information .name {
   padding-bottom: 3rem;
   font-size: 3rem;
   font-family: Raleway;
+  color: #C71585;
 }
 
 .personal-information .title {
   padding-bottom: 3rem;
   font-size: 2.5rem;
   font-family: Raleway;
-}
-
-.contact-section {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.contact-section a {
-  color: #F8F8FF;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.circle-bg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border-color: white;
-  border-style: solid;
 }
 
 .skills {
@@ -114,11 +104,12 @@ a {
   list-style-type: circle;
   font-size: 1rem;
   padding-bottom: 1rem;
+  padding-right: 3rem;
 }
 
 #works {
-/*  width: 100%;*/
-  height: 50rem;
+  width: 100%;
+  height: auto; /*56rem;*/
   background-image: url("../images/footer-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -127,6 +118,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .work-header {
@@ -143,50 +135,142 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project {
   width: 25%;
-  height: 17.5rem;
+  height: 20.5rem;
   background-color: #2F2F2F;
   color: seashell;
   margin-right: 3rem;
   border: 2px solid seashell;
+  margin-bottom: 2rem;
 }
 
 .project-image img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   border-bottom: 1px solid seashell;
 }
 
 .project-heading {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .technologies {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   font-size: 1rem;
-  display: flex;
-  justify-content: center;
   color: #B0B0B0;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .technologies-heading {
-
+  padding: 1rem 2rem;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  color: #eeeeee;
 }
 
 .technologies ul {
-
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
 }
 .technologies ul li {
   list-style-type: circle;
-
+  font-size: 0.9rem;
+  padding-top: 0.1rem;
+  padding-right: 1.5rem;
 }
+
+.more-projects-link {
+  color: seashell;
+  font-size: 1.2rem;
+  background-color: #2F2F2F;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid seashell;
+}
+
+.more-projects-link:hover{
+  border-color: #C71585;
+  color: #C71585;
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: #101316;
+  color: seashell;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.contact-heading {
+  font-size: 2rem;
+}
+
+.contact-section {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.contact-section a {
+  color: #F8F8FF;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact-paragraph {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.circle-bg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid seashell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.circle-bg:hover {
+  border-color: #C71585;
+}
+
+.contact-section a:hover {
+  color: #C71585;
+  cursor: pointer;
+}
+
+#footer {
+  width: 100%;
+  height: 4rem;
+  background-color: #000000;
+  color: seashell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid seashell;
+}
+
+
 /*#welcome-section {
   width: 100%;
   height: 50rem;
