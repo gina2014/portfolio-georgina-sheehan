@@ -2,11 +2,8 @@
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
-}
-
-.site-container {
-  width: 90rem;
-  margin: 0px auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* General CSS Classes */
@@ -22,14 +19,15 @@ a {
   text-decoration: none
 }
 
-#page-header {
+#navbar {
   width: 100%;
   height: 4rem;
   display: flex;
   align-items: center;
   background-color: #000000; /*#172C3E; /* #253746;*/
   border-bottom: 1px solid seashell;/*#F0F8FF;*/
-  /*position: fixed;*/
+  position: fixed;
+  top: 0;
   margin: 0 auto;
 }
 
@@ -42,58 +40,51 @@ a {
 .nav-section a {
   color: #ffffff;
   font-size: 1.1rem;
-  padding: 4rem;
+  padding: 1rem;
 }
 
 .nav-section a:hover {
   color: #C71585;
 }
 
-#about {
-  width: 100%;
-  height: 45rem;
+#welcome-section {
+  height: auto;
   background-color: #101316;/*#13191E; /*#10212F; /*#204564; /*#21415D;*/
-}
-
-.personal-information {
-  width: 100%;
-  height: 45rem;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 115px 0 30px 0;
 }
 
 .introduction {
-  padding-bottom: 3rem;
-  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
   font-family: Raleway;
 }
 
 .personal-information .name {
   padding-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: Raleway;
   color: #C71585;
 }
 
 .personal-information .title {
-  padding-bottom: 3rem;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-family: Raleway;
 }
 
 .skills {
   display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
+  padding-left: 40px;
 }
 
 .skill-list {
   display: flex;
-  padding-right: 2rem;
   flex-direction: column;
+  padding-top: 1.5rem;
 }
 
 .skill-list ul {
@@ -119,6 +110,7 @@ a {
   flex-direction: column;
   text-align: center;
   padding-bottom: 3rem;
+  align-items: center;
 }
 
 .work-header {
@@ -128,36 +120,48 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.projects {
+#projects {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
+  max-width: 90%;
 }
 
 .project {
-  width: 25%;
-  height: 20.5rem;
+  width: 100%;
   background-color: #2F2F2F;
   color: seashell;
-  margin-right: 3rem;
   border: 2px solid seashell;
   margin-bottom: 2rem;
 }
 
+.project:hover .project-heading {
+  text-decoration: underline;
+  color: #C71585;
+}
+
 .project-image img {
   width: 100%;
-  height: 200px;
+  height: auto;
   border-bottom: 1px solid seashell;
+  object-fit: cover;
+}
+
+.project-desc {
+  min-height: 142.6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-heading {
   font-size: 1.3rem;
-  margin-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .technologies {
@@ -175,6 +179,7 @@ a {
   align-items: flex-start;
   font-size: 1.1rem;
   color: #eeeeee;
+  text-align: center;
 }
 
 .technologies ul {
@@ -182,12 +187,14 @@ a {
   justify-content: flex-start;
   padding-left: 2.5rem;
   padding-right: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .technologies ul li {
   list-style-type: circle;
   font-size: 0.9rem;
   padding-top: 0.1rem;
-  padding-right: 1.5rem;
+  padding-right: 1.3rem;
 }
 
 .more-projects-link {
@@ -252,6 +259,12 @@ a {
 
 .circle-bg:hover {
   border-color: #C71585;
+  cursor: pointer;
+}
+
+.circle-bg:hover a{
+  color: #C71585;
+  cursor: pointer;
 }
 
 .contact-section a:hover {
@@ -270,26 +283,87 @@ a {
   border-top: 1px solid seashell;
 }
 
+@media screen and (min-width: 580px) {
+  #projects {
+    max-width: 95%;
+    justify-content: flex-start;
+  }
 
-/*#welcome-section {
-  width: 100%;
-  height: 50rem;
+  .project {
+    width: 47%;
+  }  
 
+  .project:nth-child(odd) { 
+    margin-right: 20px;
+  }
 }
 
-.personal-information {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.personal-information span {
-  font-weight: bold;
-  font-family: Raleway;
-  color: #000000;
+@media screen and (min-width: 768px) {
+  .personal-information .title {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    font-size: 2rem;
+  }
+
+  .personal-information .name {
+    font-size: 2.5rem;
+  }
+
+  .nav-section a {
+    padding: 1rem 2rem;
+  }
+
+  .project:nth-child(odd) { 
+    margin-right: 20px;
+  }
+
+  .project {
+    width: 48%;
+  } 
+
+  .more-projects-link {
+    padding: 1rem;
+  }
 }
 
-.contact-section a {
-  color: #000000;
-  font-weight: bold;
-}*/
+@media screen and (min-width: 1024px) {
+  .nav-section a {
+    padding:  1rem 3rem;
+  }
+
+  .project {
+    width: 30%;
+    margin-right: 30px;
+  }
+
+  .project:nth-child(odd) { 
+    margin-right: 30px;
+  }
+
+  .project:nth-child(3n) { 
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-section a {
+    padding: 1rem 4rem;
+  }
+
+  .personal-information .title {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .introduction {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .personal-information .name {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+}

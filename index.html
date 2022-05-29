@@ -2,7 +2,7 @@
 <html>
 
   <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -22,48 +22,20 @@
   <body>
 
     <header id="page-header">
-
-      <div class="site-container">
-        <!--<div id="welcome-section">-->
-        <div class="background-image">
-          <!--<img src="assets/images/mountains.png" alt="">-->
-        </div>
-
-        <div class="nav-section">
-          <span><a href="#page-header">About</a></span>
-          <span><a href="#works">Projects</a></span>
-          <span><a href="#contact">Contact</a></span>
-        </div>
-
-      </div>
-
+      <div class="nav-section" id="navbar">
+        <span><a href="#page-header">About</a></span>
+        <span><a href="#works">Projects</a></span>
+        <span><a href="#contact">Contact</a></span>
+      </div> 
     </header>
 
     <div class="main">
 
-      <div id="about">
+      <div id="welcome-section" class="personal-information">
 
-        <div class="site-container">
+            <h1 class="introduction">Hello, I'm <span class="name">Georgina Sheehan</span>.</h1>
 
-          <div class="personal-information">
-
-            <span class="introduction">Hello, I'm <span class="name">Georgina Sheehan</span>.</span>
-
-            <span class="title">I'm a Web Developer.</span>
-
-            <!--<div class="contact-section">
-
-              <div class="circle-bg">
-                <a href="mailto:georginasheehan@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-              </div>
-
-              <div class="circle-bg">
-                <a href="https://www.linkedin.com/in/georgina-sheehan-328abaa6/" target="_blank"><i class="fa fa-linkedin linkedin-icon"></i></a>
-              </div>
-
-              <div class="circle-bg">
-                <a href="https://github.com/gina2014" target="_blank"><i class="fa fa-github github-icon"></i></a>
-              </div>-->
+            <div class="title">I'm a Web Developer.</div>
 
               <div class="skills">
                 <ul class="skill-list">
@@ -77,23 +49,14 @@
                   <li>BootStrap</li>
                 </ul>
               </div>
-
-            </div>
-
-
-          </div>
         </div>
-
-        </div>
-
 
       <div id="works">
-        <div class="site-container">
           <h2 class="work-header">Featured Projects</h2>
 
-          <div class="projects">
+          <div id="projects">
 
-            <div class="project">
+            <a class="project project-tile" href="https://gina2014.github.io/colmarAcademy/" target="_blank">
               <div class="project-image">
                 <img src="assets/images/colmar-academy-desktop.png" alt="">
               </div>
@@ -109,9 +72,9 @@
                 </div>
 
               </div>
-            </div>
+            </a>
 
-            <div class="project">
+            <a class="project project-tile" href="https://gina2014.github.io/front_end_questionnaire/" target="_blank">
               <div class="project-image">
                 <img src="assets/images/deveire-desktop.png" alt="">
               </div>
@@ -128,9 +91,9 @@
                 </div>
 
               </div>
-            </div>
+            </a>
 
-            <div class="project">
+            <a class="project project-tile" href="https://gina2014.github.io/MatchUpGame/" target="_blank">
               <div class="project-image">
                 <img src="assets/images/match-up-game-desktop.png" alt="">
               </div>
@@ -147,9 +110,9 @@
                 </div>
 
               </div>
-            </div>
+            </a>
 
-            <div class="project">
+            <a class="project project-tile" href="https://gina2014.github.io/BBC_News_Site_Clone/" target="_blank">
               <div class="project-image">
                 <img src="assets/images/bbc-clone-desktop.png" alt="">
               </div>
@@ -164,9 +127,9 @@
                 </div>
 
               </div>
-            </div>
+            </a>
 
-            <div class="project">
+            <a class="project project-tile" href="https://gina2014.github.io/TeaCozy/" target="_blank">
               <div class="project-image">
                 <img src="assets/images/tea-cozy-desktop.png" alt="">
               </div>
@@ -181,13 +144,11 @@
                 </div>
 
               </div>
-            </div>
+            </a>
 
           </div>
 
           <a href="#" class="more-projects-link">See More Projects</a>
-
-        </div>
 
       </div>
 
@@ -207,11 +168,10 @@
           </div>
 
           <div class="circle-bg">
-            <a href="https://github.com/gina2014" target="_blank"><i class="fa fa-github github-icon"></i></a>
+            <a class="profile-link" href="https://github.com/gina2014" target="_blank"><i class="fa fa-github github-icon"></i></a>
           </div>
+        </div>
       </div>
-
-
     </div>
 
     <footer id="footer">
